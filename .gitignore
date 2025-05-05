@@ -22,3 +22,37 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+/.metadata/
+
+# Archivos de Eclipse
+.classpath
+.project
+.settings/
+
+# Directorios de compilación
+bin/
+build/
+
+# Archivos temporales
+*.log
+*.tmp
+*.swp
+*.bak
+*~
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de despliegue opcionales
+*.war
+*.ear
+
+# Archivos de Maven o Gradle (si los usas)
+target/
+.idea/
+*.iml
+
+# Archivos del servidor Tomcat si se copian al proyecto
+Servers/
+
