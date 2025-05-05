@@ -35,4 +35,42 @@ Aprender a crear aplicaciones web dinámicas en Java, desde los conceptos más b
 ---
 
 ## 📁 Estructura del repositorio
+/Sesion-1-HolaServlet/ → Ejemplo básico con servlets
+/Sesion-2-SpringMVC-Minimal/ → Ejemplo inicial con Spring MVC
+/Sesion-3-Formulario-MVC/ → Mini app con formulario
+/Sesion-4-CRUD-BD/ → Ejemplo con base de datos
+/Proyecto-Final/ → Proyecto completo con login y BD
+/material/ → Documentación, PDFs, enlaces
+
+
+---
+
+## 🧪 Evaluación
+
+- Cuestionarios tipo test (Google Forms) al final de cada sesión.
+- Proyecto final individual o en parejas.
+- Participación activa en clase y resolución de tareas propuestas.
+
+---
+
+## 📌 Requisitos previos
+
+- Conocimientos básicos de programación en Java
+- JDK 21 instalado
+- Eclipse IDE configurado con Tomcat 10+
+- Conexión estable a Internet para las clases online
+
+---
+
+## 📫 Contacto
+
+**Marc Esteve Garcia**  
+Formador en Desarrollo Web · Akkodis  
+[LinkedIn](https://www.linkedin.com/in/marcestevegarcia)  
+[Email](mailto:marc@pr0j3ct.com)
+
+---
+
+**¡Gracias por seguir el curso! 💻🚀**
+
 
