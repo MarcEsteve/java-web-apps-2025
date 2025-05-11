@@ -3,6 +3,39 @@
 <head>
     <title>Gracias</title>
     <link rel="stylesheet" href="css/estilo.css" />
+	<style>
+        .menu {
+            margin-bottom: 20px;
+        }
+        .menu a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        body {
+		    font-family: 'Segoe UI', sans-serif;
+		    background-color: #f2f4f8;
+		    color: #333;
+		    padding: 2rem;
+		    text-align: center;
+		}
+		h1 {
+		    color: #0055a4;
+		}
+		a {
+		    color: #007bff;
+		    text-decoration: none;
+		}
+		.menu {
+		    margin-bottom: 1rem;
+		}
+		input, textarea {
+		    width: 80%;
+		    padding: 0.5rem;
+		    margin: 0.5rem;
+		}
+        
+    </style>    
 </head>
 <body>
     <div class="menu">
