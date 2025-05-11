@@ -2,12 +2,13 @@
 <html>
 <head>
     <title>Gracias</title>
-    <link rel="stylesheet" href="../css/estilo.css" />
+    <link rel="stylesheet" href="css/estilo.css" />
 </head>
 <body>
     <div class="menu">
-        <a href="/">Inicio</a> |
-        <a href="servicios">Servicios</a> |
+        <a href="inicio">Inicio</a> |
+        <a href="servicios">Servicios</a>|
+        <a href="somos">Quiénes somos</a> |
         <a href="contacto">Contacto</a>
     </div>
     <h1>¡Gracias, ${nombre}!</h1>

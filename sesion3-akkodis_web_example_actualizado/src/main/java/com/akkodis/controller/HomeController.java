@@ -8,14 +8,26 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 public class HomeController {
 
+    
     @GetMapping("/")
+    public String redirigirInicio() {
+        return "redirect:/inicio";
+    }
+    
+    @GetMapping("/inicio")
     public String inicio() {
         return "index";
     }
 
+
     @GetMapping("/servicios")
     public String servicios() {
         return "servicios";
+    }
+    
+    @GetMapping("/somos")
+    public String somos() {
+        return "somos";
     }
 
     @GetMapping("/contacto")
