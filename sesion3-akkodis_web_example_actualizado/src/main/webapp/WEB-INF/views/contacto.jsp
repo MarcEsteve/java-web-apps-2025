@@ -2,51 +2,7 @@
 <html>
 <head>
     <title>Contacto Akkodis</title>
-	<style>
-        .menu {
-            margin-bottom: 20px;
-        }
-        .menu a {
-            margin-right: 10px;
-            text-decoration: none;
-            color: #333;
-        }
-        body {
-		    font-family: 'Segoe UI', sans-serif;
-		    background-color: #f2f4f8;
-		    color: #333;
-		    padding: 2rem;
-		    text-align: center;
-		}
-		h1 {
-		    color: #0055a4;
-		}
-		a {
-		    color: #007bff;
-		    text-decoration: none;
-		}
-		.menu {
-		    margin-bottom: 1rem;
-		}
-		input, textarea {
-		    width: 80%;
-		    padding: 0.5rem;
-		    margin: 0.5rem;
-		}
-		form {
-		  display: flex;
-		  flex-direction: column;
-		  align-items: center;
-		   margin-top: 2rem;
-		  width: 100%;
-		  max-width: 400px;
-		  margin: 0 auto;
-		  background-color: #fff;
-		  padding: 20px;
-		  border-radius: 8px;
-		  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-		}
-    </style>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/estilo.css" />
 </head>
 <body>
 	<div style="text-align: center;background-color: #003e66">
@@ -66,5 +22,6 @@
         <label>Mensaje: <textarea name="mensaje"></textarea></label><br/>
         <input type="submit" value="Enviar" />
     </form>
+    <img src="${pageContext.request.contextPath}/img/akkodis-logo.png" alt="Logo" />
 </body>
 </html>
