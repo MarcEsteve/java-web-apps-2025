@@ -23,7 +23,7 @@ public class LoginController {
 	@PostMapping
     public String procesarLogin(@ModelAttribute("usuario") Usuario usuario, Model model) {
         // Validación básica: usuario = admin, contraseña = 1234
-        if ("admin".equals(usuario.getName()) && "1234".equals(usuario.getPass())) {
+        if ("Marc".equals(usuario.getName()) && "123456".equals(usuario.getPass())) {
             model.addAttribute("name", usuario.getName());
             return "bienvenido";
         } else {

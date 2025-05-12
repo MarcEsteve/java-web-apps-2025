@@ -2,38 +2,7 @@
 <html>
 <head>
     <title>Akkodis - Inicio</title>
-	<style>
-        .menu {
-            margin-bottom: 20px;
-        }
-        .menu a {
-            margin-right: 10px;
-            text-decoration: none;
-            color: #333;
-        }
-        body {
-		    font-family: 'Segoe UI', sans-serif;
-		    background-color: #f2f4f8;
-		    color: #333;
-		    padding: 2rem;
-		    text-align: center;
-		}
-		h1 {
-		    color: #0055a4;
-		}
-		a {
-		    color: #007bff;
-		    text-decoration: none;
-		}
-		.menu {
-		    margin-bottom: 1rem;
-		}
-		input, textarea {
-		    width: 80%;
-		    padding: 0.5rem;
-		    margin: 0.5rem;
-		}
-    </style>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/estilo.css" />
 </head>
 <body>
 	<div style="text-align: center;background-color: #003e66">
@@ -44,8 +13,7 @@
         <a href="inicio">Inicio</a> |
         <a href="servicios">Servicios</a>|
         <a href="somos">Quiénes somos</a> |
-        <a href="contacto">Contacto</a> |
-        <a href="login">Iniciar Sesión</a>
+        <a href="contacto">Contacto</a>
     </div>
     <h1>Bienvenido a Akkodis</h1>
     <p>Soluciones tecnológicas para un mundo en movimiento.</p>
