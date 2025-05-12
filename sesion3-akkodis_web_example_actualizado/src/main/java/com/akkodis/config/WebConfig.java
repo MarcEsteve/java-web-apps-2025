@@ -13,17 +13,20 @@ import org.springframework.context.annotation.Bean;
 @ComponentScan(basePackages = "com.akkodis.controller")
 public class WebConfig {
 
-    @Bean
-    public InternalResourceViewResolver viewResolver() {
-        InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-        resolver.setPrefix("/WEB-INF/views/");
-        resolver.setSuffix(".jsp");
-        return resolver;
-    }
-    
-    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry
-            .addResourceHandler("/css/**")
-            .addResourceLocations("/css/");
+	@Bean
+	public InternalResourceViewResolver viewResolver() {
+		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
+		resolver.setPrefix("/WEB-INF/views/");
+		resolver.setSuffix(".jsp");
+		return resolver;
+	}
+
+	public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/css/**")
+        	.addResourceLocations("WEB-INF/css/");
+
+        registry.addResourceHandler("/img/**")
+        	.addResourceLocations("WEB-INF/img/");
+
     }
 }

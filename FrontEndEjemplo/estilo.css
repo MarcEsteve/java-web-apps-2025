@@ -25,3 +25,14 @@ button:hover {
   margin-top: 1.5rem;
   font-weight: bold;
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  /* que el boton de submit sea acorde a los colores de la marca y no sea muy ancho */
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}

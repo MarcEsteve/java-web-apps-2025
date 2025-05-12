@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>Gracias</title>
-    <link rel="stylesheet" href="css/estilo.css" />
 	<style>
         .menu {
             margin-bottom: 20px;
@@ -34,10 +33,13 @@
 		    padding: 0.5rem;
 		    margin: 0.5rem;
 		}
-        
-    </style>    
+    </style>
 </head>
 <body>
+	<div style="text-align: center;background-color: #003e66">
+    	<a href="inicio"><img src="https://www.akkodis.com/-/jssmedia/project/akkodis/akkodis/logos/header-rd-logo.png" alt="Akkodis" style="margin: 20px;"/></a>
+   	</div>
+	<br/>
     <div class="menu">
         <a href="inicio">Inicio</a> |
         <a href="servicios">Servicios</a>|
