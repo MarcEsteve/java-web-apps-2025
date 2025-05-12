@@ -1,6 +1,7 @@
 package com.akkodis.controller;
 
 import com.akkodis.model.Contacto;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -41,4 +42,5 @@ public class HomeController {
         model.addAttribute("nombre", contacto.getNombre());
         return "gracias";
     }
+
 }

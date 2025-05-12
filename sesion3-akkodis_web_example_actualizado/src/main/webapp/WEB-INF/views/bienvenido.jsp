@@ -1,10 +1,10 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>Bienvenido</title>
 </head>
 <body>
-    <h2>Bienvenido, ${nombre}!</h2>
-    <p>Has iniciado sesión correctamente.</p>
+    <h2>Bienvenido, ${name}!</h2>
+    <p>Has iniciado sesiÃ³n correctamente.</p>
 </body>
 </html>

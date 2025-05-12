@@ -1,26 +1,25 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>Login de Usuario</title>
+    <style>
+		form {
+			width: 300px;
+			margin: 0 auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+	</style>
 </head>
 <body>
-    <h2>Iniciar Sesión</h2>
-    <form:form method="post" modelAttribute="usuario" action="${pageContext.request.contextPath}/login">
-        <table>
-            <tr>
-                <td>Nombre de Usuario:</td>
-                <td><form:input path="name" /></td>
-            </tr>
-            <tr>
-                <td>Contraseña:</td>
-                <td><form:password path="pass" /></td>
-            </tr>
-            <tr>
-                <td colspan="2"><input type="submit" value="Ingresar" /></td>
-            </tr>
-        </table>
-    </form:form>
+    <h1>Iniciar SesiÃ³n</h1>
+    
+    <form action="login" method="post">
+        <label>Usuario: <input type="text" name="name" /></label><br/>
+        <label>ContraseÃ±a: <input type="password" name="pass" /></label><br/>
+        <input type="submit" value="Enviar" />
+    </form>
     <c:if test="${not empty mensaje}">
         <p style="color:red;">${mensaje}</p>
     </c:if>
