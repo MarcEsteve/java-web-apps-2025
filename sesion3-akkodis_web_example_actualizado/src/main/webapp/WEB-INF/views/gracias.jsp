@@ -48,5 +48,7 @@
     </div>
     <h1>¡Gracias, ${nombre}!</h1>
     <p>Hemos recibido tu mensaje. Nos pondremos en contacto contigo pronto.</p>
+	<img src="${pageContext.request.contextPath}/img/logo.png" alt="Logo de Akkodis" />
+
 </body>
 </html>
