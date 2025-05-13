@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/estilo.css" />
 </head>
 <body>
-	<div style="text-align: center;background-color: #003e66">
+	<div class="logo-header">
     	<a href="inicio"><img src="https://www.akkodis.com/-/jssmedia/project/akkodis/akkodis/logos/header-rd-logo.png" alt="Akkodis" style="margin: 20px;"/></a>
    	</div>
 	<br/>

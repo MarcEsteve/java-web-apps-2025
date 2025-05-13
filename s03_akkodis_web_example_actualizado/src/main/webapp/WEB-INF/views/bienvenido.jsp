@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
 <title>Bienvenido</title>
@@ -6,10 +6,11 @@
 	href="${pageContext.request.contextPath}/css/estilo.css" />
 </head>
 <body>
-	<div style="text-align: center; background-color: #003e66">
-		<a href="inicio"><img
-			src="https://www.akkodis.com/-/jssmedia/project/akkodis/akkodis/logos/header-rd-logo.png"
-			alt="Akkodis" style="margin: 20px;" /></a>
+	<div class="logo-header"">
+		<a href="inicio">
+		<img src="https://www.akkodis.com/-/jssmedia/project/akkodis/akkodis/logos/header-rd-logo.png"
+			alt="Akkodis" style="margin: 20px;" />
+		</a>
 	</div>
 	<br />
 	<div class="menu">
