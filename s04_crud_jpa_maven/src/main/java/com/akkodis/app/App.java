@@ -21,22 +21,23 @@ public class App {
         lista.forEach(e -> System.out.println(e.getId() + " - " + e.getNombre()));
 
         // Actualizar un empleado
-        em.getTransaction().begin();
-        Empleado e1 = em.find(Empleado.class, nuevo.getId());
-        if (e1 != null) {
-            e1.setSalario(3500.00);
-        }
-        em.getTransaction().commit();
+//        em.getTransaction().begin();
+//        Empleado e1 = em.find(Empleado.class, nuevo.getId());
+//        if (e1 != null) {
+//            e1.setSalario(3500.00);
+//        }
+//        em.getTransaction().commit();
 
         // Eliminar un empleado
-        em.getTransaction().begin();
-        Empleado e2 = em.find(Empleado.class, nuevo.getId());
-        if (e2 != null) {
-            em.remove(e2);
-        }
-        em.getTransaction().commit();
+//        em.getTransaction().begin();
+//        Empleado e2 = em.find(Empleado.class, nuevo.getId());
+//        if (e2 != null) {
+//            em.remove(e2);
+//        }
+//        em.getTransaction().commit();
 
         em.close();
         emf.close();
+    	   
     }
 }
