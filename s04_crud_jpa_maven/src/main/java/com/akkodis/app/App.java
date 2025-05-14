@@ -15,8 +15,9 @@ public class App {
         Empleado nuevo = new Empleado("Alicia", "IT", 3000.00);
         em.persist(nuevo);
         em.getTransaction().commit();
+        // INSERT INTO empleado (nombre, departamento, salario) VALUES ('Alicia', 'IT', 3000.00)
 
-        // Leer todos los empleados
+        // Leer todos los empleados "SELECT * FROM empleado"
         List<Empleado> lista = em.createQuery("SELECT e FROM Empleado e", Empleado.class).getResultList();
         lista.forEach(e -> System.out.println(e.getId() + " - " + e.getNombre()));
 
