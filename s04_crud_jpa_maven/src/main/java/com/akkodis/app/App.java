@@ -15,11 +15,27 @@ public class App {
         Empleado nuevo = new Empleado("Alicia", "IT", 3000.00);
         em.persist(nuevo);
         em.getTransaction().commit();
+        System.out.println("Empleado creado con ID: " + nuevo.getId());
+
         // INSERT INTO empleado (nombre, departamento, salario) VALUES ('Alicia', 'IT', 3000.00)
 
-        // Leer todos los empleados "SELECT * FROM empleado"
-        List<Empleado> lista = em.createQuery("SELECT e FROM Empleado e", Empleado.class).getResultList();
-        lista.forEach(e -> System.out.println(e.getId() + " - " + e.getNombre()));
+        // Leer todos los empleados "SELECT * FROM empleado" ******
+//        List<Empleado> lista = em.createQuery("SELECT e FROM Empleado e", Empleado.class).getResultList();
+//        lista.forEach(e -> System.out.println(e.getId() + " - " + e.getNombre()));
+     // Leer un empleado por su ID
+        Empleado e = em.find(Empleado.class, 1);  // busca el empleado con id 1
+        if(e != null) {
+            System.out.println("Empleado 1: " + e.getNombre() + ", Departamento: " + e.getDepartamento());
+        }
+
+        // Leer todos los empleados (consulta JPQL)
+        List<Empleado> lista = em.createQuery("SELECT emp FROM Empleado emp", Empleado.class)
+                                 .getResultList();
+        System.out.println("Total empleados: " + lista.size());
+        for(Empleado emp : lista) {
+            System.out.println(emp.getId() + " - " + emp.getNombre());
+        }
+
 
         // Actualizar un empleado
 //        em.getTransaction().begin();
