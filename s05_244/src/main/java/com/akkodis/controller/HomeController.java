@@ -1,4 +1,4 @@
-package com.example.security;
+package com.akkodis.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,10 +14,5 @@ public class HomeController {
     @GetMapping("/admin")
     public String admin() {
         return "admin";
-    }
-
-    @GetMapping("/login")
-    public String login() {
-        return "login";
     }
 }
