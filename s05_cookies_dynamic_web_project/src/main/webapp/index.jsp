@@ -4,9 +4,16 @@
     <title>Cookie Demo</title>
 </head>
 <body>
-<h2>Haz clic para establecer una cookie</h2>
-<p>Esta aplicación de demostración muestra cómo establecer una cookie en el navegador del cliente.</p>
-<p>Bienvenido, ${usuario}</p>
-<p><a href="setcookie">Establecer cookie de usuario</a></p>
+    <p>Bienvenido, ${usuario}</p>
+    <p><a href="setcookie">Establecer cookie de usuario</a></p>
+    <c:if test="${empty usuario}">
+  		<p><b>El atributo 'usuario' está vacío</b></p>
+	</c:if>
+	<%
+    	String usuario = (String) request.getAttribute("usuario");
+    	if (usuario == null) usuario = "null";
+	%>
+	<p>Bienvenido desde scriptlet: <%= usuario %></p>
+	
 </body>
 </html>

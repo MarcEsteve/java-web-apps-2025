@@ -19,7 +19,6 @@ public class CookieServlet extends jakarta.servlet.http.HttpServlet {
             Cookie cookie = new Cookie("usuario", "Marc");
             cookie.setMaxAge(3600); // 1 hora
             response.addCookie(cookie);
-            // Redirigimos a la raíz del servlet, que es /
             response.sendRedirect(request.getContextPath() + "/");
             return;
         }
@@ -36,8 +35,5 @@ public class CookieServlet extends jakarta.servlet.http.HttpServlet {
 
         request.setAttribute("usuario", usuario);
         request.getRequestDispatcher("/index.jsp").forward(request, response);
-        
-        System.out.println("👉 Servlet ejecutado correctamente");
-        System.out.println("👉 Cookie de usuario: " + usuario);
     }
 }

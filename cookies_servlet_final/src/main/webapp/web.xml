@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
@@ -11,7 +12,7 @@
 
     <servlet-mapping>
         <servlet-name>CookieServlet</servlet-name>
-        <url-pattern>/</url-pattern> <!-- ATENCIÓN: esto debe estar -->
+        <url-pattern>/</url-pattern>
         <url-pattern>/setcookie</url-pattern>
     </servlet-mapping>
 
