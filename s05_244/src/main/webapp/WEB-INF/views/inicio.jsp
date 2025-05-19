@@ -1,0 +1,1 @@
+<html><body><h2>Bienvenido al Home</h2><a href="admin">Ir a Admin</a></body></html>
