@@ -1,1 +1,0 @@
-<html><body><h2>Área de Administración</h2></body></html>

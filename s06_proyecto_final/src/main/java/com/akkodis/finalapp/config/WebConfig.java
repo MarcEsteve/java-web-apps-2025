@@ -1,4 +1,4 @@
-package com.akkodis.config;
+package com.akkodis.finalapp.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
