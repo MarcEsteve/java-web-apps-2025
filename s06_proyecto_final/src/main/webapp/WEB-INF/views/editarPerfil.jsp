@@ -6,6 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Editar Perfil - Akkodis</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/estilo.css" />
     <style>
         body {
             font-family: "Segoe UI", sans-serif;
