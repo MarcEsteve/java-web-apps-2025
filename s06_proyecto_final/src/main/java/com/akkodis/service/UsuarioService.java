@@ -1,7 +1,7 @@
-package com.akkodis.finalapp.service;
+package com.akkodis.service;
 
-import com.akkodis.finalapp.model.Usuario;
-import com.akkodis.finalapp.repository.UsuarioRepository;
+import com.akkodis.model.Usuario;
+import com.akkodis.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.*;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

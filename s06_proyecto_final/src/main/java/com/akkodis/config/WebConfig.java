@@ -1,4 +1,4 @@
-package com.akkodis.finalapp.config;
+package com.akkodis.config;
 
 import org.springframework.context.annotation.*;
 import org.springframework.web.servlet.config.annotation.*;
@@ -6,7 +6,7 @@ import org.springframework.web.servlet.view.*;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = "com.akkodis.finalapp")
+@ComponentScan(basePackages = "com.akkodis.controller")
 public class WebConfig implements WebMvcConfigurer {
 
     @Override

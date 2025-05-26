@@ -1,4 +1,4 @@
-package com.akkodis.finalapp.model;
+package com.akkodis.model;
 
 import jakarta.persistence.*;
 import java.time.LocalDate;
