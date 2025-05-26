@@ -7,6 +7,8 @@
 <title>Página de inicio</title>
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/css/estilo.css" />
+	
+	
 </head>
 <body>
 	<h1>Bienvenido a la página de inicio</h1>
