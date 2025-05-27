@@ -17,7 +17,8 @@ public class App {
         em.getTransaction().commit();
         System.out.println("Empleado creado con ID: " + nuevo.getId());
 
-        // INSERT INTO empleado (nombre, departamento, salario) VALUES ('Alicia', 'IT', 3000.00)
+        //Equivalente a la sentencia SQL:
+        //INSERT INTO empleado (nombre, departamento, salario) VALUES ('Alicia', 'IT', 3000.00)
 
         // Leer todos los empleados "SELECT * FROM empleado" ******
 //        List<Empleado> lista = em.createQuery("SELECT e FROM Empleado e", Empleado.class).getResultList();
@@ -41,7 +42,7 @@ public class App {
 //        em.getTransaction().begin();
 //        Empleado e1 = em.find(Empleado.class, nuevo.getId());
 //        if (e1 != null) {
-//            e1.setSalario(3500.00);
+//            e1.setSalario(3511.00);
 //        }
 //        em.getTransaction().commit();
 
