@@ -12,7 +12,7 @@ public class App {
 
         // Crear un nuevo empleado
         em.getTransaction().begin();
-        Empleado nuevo = new Empleado("Alicia", "IT", 3000.00);
+        Empleado nuevo = new Empleado("Marc", "Teacher", 5300.00);
         em.persist(nuevo);
         em.getTransaction().commit();
         System.out.println("Empleado creado con ID: " + nuevo.getId());
@@ -39,13 +39,13 @@ public class App {
 
 
         // Actualizar un empleado
-        em.getTransaction().begin();
+//        em.getTransaction().begin();
 //        Empleado e1 = em.find(Empleado.class, nuevo.getId());
-        Empleado e1 = em.find(Empleado.class, 1);
-        if (e1 != null) {
-            e1.setSalario(3511.00);
-        }
-        em.getTransaction().commit();
+//        Empleado e1 = em.find(Empleado.class, 1);
+//        if (e1 != null) {
+//            e1.setSalario(3511.00);
+//        }
+//        em.getTransaction().commit();
 
         // Eliminar un empleado
 //        em.getTransaction().begin();
