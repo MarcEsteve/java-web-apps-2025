@@ -11,11 +11,11 @@ public class App {
         EntityManager em = emf.createEntityManager();
 
         // Crear un nuevo empleado
-        em.getTransaction().begin();
-        Empleado nuevo = new Empleado("Marc", "Teacher", 5300.00);
-        em.persist(nuevo);
-        em.getTransaction().commit();
-        System.out.println("Empleado creado con ID: " + nuevo.getId());
+//        em.getTransaction().begin();
+//        Empleado nuevo = new Empleado("skjdsad", "Teacdsadsadher", 6000.00);
+//        em.persist(nuevo);
+//        em.getTransaction().commit();
+//        System.out.println("Empleado creado con ID: " + nuevo.getId());
 
         //Equivalente a la sentencia SQL:
         //INSERT INTO empleado (nombre, departamento, salario) VALUES ('Alicia', 'IT', 3000.00)
@@ -34,7 +34,7 @@ public class App {
                                  .getResultList();
         System.out.println("Total empleados: " + lista.size());
         for(Empleado emp : lista) {
-            System.out.println(emp.getId() + " - " + emp.getNombre());
+            System.out.println(emp.getNombre() + " - " + emp.getDepartamento() + " - " + emp.getSalario());
         }
 
 
